@@ -45,7 +45,7 @@ sudo service apache2 restart
 
 please note that the list should include SLUGs, not names. please check that json is valid.
 
-6. let me know if there are any issues - https://github.com/bashioo/netbox_topology/issues
+6. let me know if there are any issues - https://github.com/kevinpm/netbox_topology/issues
 
 
 
