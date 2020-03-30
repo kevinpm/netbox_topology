@@ -41,7 +41,18 @@ sudo service apache2 restart
 
 ![Screenshot django setup](docs/screenshot-customfield.png "Screenshot of django setup")
 
-5. modify NETBOXPATH/netbox/static/js/topology_config.json to include your list on roles to hide from the topology view.
+Coordinates format <x>:<y>
+
+5. modify NETBOXPATH/netbox/static/js/topology_config.json to include your list on roles to hide from the topology view. You will need to add new list of cables to shown under shown_cables
+Constants are defined here
+```
+    "shown_cables": [
+        cat5e,
+        cat6,
+        cat6a,
+        cat7
+    ]
+```
 
 please note that the list should include SLUGs, not names. please check that json is valid.
 
