@@ -2,7 +2,7 @@
 
 Fork from https://github.com/bashioo/netbox_topology
 
-[Update] patchfile updated. This is working with netbox 2.7.3
+[**Update**] patchfile updated. This is working with netbox 2.7.3
 
 
 Patch to apply to a netbox installation to add beautiful topology view to sites
