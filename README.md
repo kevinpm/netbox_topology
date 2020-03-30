@@ -20,7 +20,7 @@ This module allows to create and delete connections between interfaces via contr
 1. clone git repo
 
 ```
-git clone https://github.com/bashioo/netbox_topology.git
+git clone https://github.com/kevinpm/netbox_topology.git
 ```
 
 2. run install.sh, sudo might be required to get access to netbox installation directory:
