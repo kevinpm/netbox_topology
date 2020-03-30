@@ -30,18 +30,20 @@ cd netbox_topology
 sudo ./install.sh
 ```
 
-3. restart netbox via supervisord or apache/nginx (or even docker) depending on your installation
+3. restart netbox via supervisord or apache/nginx (or even the docker container(s)) depending on your installation
 
 ```
 sudo supervisorctl restart netbox
 sudo service apache2 restart
+sudo docker restart <container-name>
+docker-compose restart
 ```
 
 4. open django admin web-interface and create a custom text field named "coordinates" under dcim->device model
 
 ![Screenshot django setup](docs/screenshot-customfield.png "Screenshot of django setup")
 
-**Coordinates format** "x;y"
+**Coordinates format** x;y
 
 5. modify NETBOXPATH/netbox/static/js/topology_config.json to include your list on roles to hide from the topology view. You will need to add new list of cables to shown under shown_cables
 Constants are defined here
@@ -72,3 +74,4 @@ OR if your installation is GIT based (Option 2 from Netbox installation guide):
 cd /opt/netbox
 git checkout .
 ```
+**TODO:** Add patch to netbox-docker
